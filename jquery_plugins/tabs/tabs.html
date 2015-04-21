@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <script src="./jquery-1.11.2.js"></script>
+    <script src="./tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs='#content-tabs'> <!-- possibly revisit -->
+      <li><a href="#pug" class='active'>Pug</a></li>
+      <li><a href="#poodle">Poodle</a></li>
+      <li><a href="#pomeranian">Pomeranian</a></li>
+    </ul>
+    <div id="content-tabs">
+      <div class="tab-pane active" id="pug">
+        <p>Pugs are small dogs with big personalities. They live to love and to be loved and were bred for one reason: to be your companion. They will try to live in your lap, eat your food, and sleep on your bed. They are incredibly playful, outgoing, adaptable, happy, lively, and affectionate. They need human companionship to survive, and will not do well at all if left alone for long periods of time. Your Pug will want and need to be part of your family. A Pug will spend his life by your side, every moment of it. They are excellent with children and are usually good with other animals in the household. Pugs are low-activity dogs. They enjoy the daily walk, but don't need hours of exercise each day. They don't like water (most cannot swim) and they don't like Frisbees or balls. They like to lie in your lap instead. You will need to be careful that your Pug doesn't exercise to the point of overheating. You will have to be especially vigilant on hot and humid days. Pugs, due to their flat faces, simply cannot tolerate extreme temperatures and can die in a short period of time. They should never be left outside unattended. They love to eat (and eat and eat!), and so are prone to obesity. So you need to watch how much you feed them and get them doing some exercise. They are intelligent and trainable, but are often slow to housetrain. They are also not car-smart and will be safest in a fenced-in yard. In short, these affectionate little guys live to please you, and they expect to be the center of attention. They are funny, cocky, sensitive, and cuddly. But you should know that they tend to sneeze, snort, and snore ... and fart ... a lot. Hey, at least they don't bark much!</p>
+      </div>
+      <div class="tab-pane" id="poodle">
+        <p>The Standard Poodle is good-natured and eager-to-please. He's also cheerful, loyal, proud, dignified, and extremely smart. When most people think of a "Poodle" they think of a feminine, girly dog. But nothing could be further from than the truth. He's actually very rugged and athletic. He's incredibly intelligent -- one of the most intelligent breeds -- and is easily trained. He thinks of himself as a person and demands to be treated like one. He's very affectionate and craves your love and companionship. He wants to be with you always. He's highly playful and loves to clown around. He possesses a keen sense of humor! He's highly energetic and very active around the home. He's playful and can learn to play fetch! He's a strong swimmer and loves the water. He's highly social and loves all people. He's gentle and patient with children. He gets along well with other dogs and pets. If he's bored he will get into mischief, so you need to give him something to do to occupy his mind. He housetrains easily. He's one of the most popular breeds.</p>
+      </div>
+      <div class="tab-pane" id="pomeranian">
+        <p>The Pomeranian is a cocky, extraverted, devoted and affectionate little guy. They are intelligent, easy to train, and they love to please their owners. They like to keep their bright little brains busy and thrive on learning new tricks and commands. For this reason, they excel at obedience competition. They will seem to understand your every word. Add this trainability to their cuddle-ability and you will see why this is a popular choice for therapy dogs. They are excellent at comforting the elderly or ill. They just love to snuggle up and nap in a person's lap. They don't require much exercise, but will require lots of your attention. They will want to be included in whatever you are doing, and have been known to be a bit nosey. They make a natural watchdog and will bark a warning when anyone approaches your home. They are distrustful of strangers. However, they are also known to bark recreationally. They will do well with other dogs, but be aware that the Pom doesn't know that he is tiny, and will be fearless with a dog of any size, which can get him into trouble. You will have to supervise your Pom when he is interacting with other dogs. You will also need to supervise young children to ensure they are respectful and gentle with their Poms. Poms can resemble the cutest stuffed animal in the world, and small children can unwittingly trample them. A Pomeranian will make you an excellent, loving companion and will entertain you each and every day.</p>
+      </div>
+    </div>
+
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>

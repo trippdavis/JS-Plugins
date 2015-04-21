@@ -1,0 +1,18 @@
+.tabs a.active {
+  font-weight: bold;
+}
+
+div.tab-pane {
+  display: none;
+}
+
+div.tab-pane.active {
+  display: block;
+  transition: opacity 500ms linear;
+}
+
+div.tab-pane.transitioning {
+  display: block;
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
